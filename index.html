@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <script src="script.js"></script>
+    <title>Calculator - MP_4 JS</title>
+</head>
+
+<body>
+    <div class="calculator-div">
+        <div id="input-display-div"></div>
+        <div id="buttons-div">
+            <div class="rows-div">
+                <button onclick="getValue('7')">7</button>
+                <button onclick="getValue('8')">8</button>
+                <button onclick="getValue('9')">9</button>
+                <button id="del-btn" onclick="deleteLatestInput()">DEL</button>
+            </div>
+            <div class="rows-div">
+                <button onclick="getValue('4')">4</button>
+                <button onclick="getValue('5')">5</button>
+                <button onclick="getValue('6')">6</button>
+                <button onclick="getValue('+')">+</button>
+            </div>
+            <div class="rows-div">
+                <button onclick="getValue('1')">1</button>
+                <button onclick="getValue('2')">2</button>
+                <button onclick="getValue('3')">3</button>
+                <button onclick="getValue('-')">-</button>
+            </div>
+            <div class="rows-div">
+                <button onclick="getValue('.')">.</button>
+                <button onclick="getValue('0')">0</button>
+                <button onclick="getValue('÷')">÷</button>
+                <button onclick="getValue('×')">×</button>
+            </div>
+            <div class="rows-div" id="button-last-div">
+                <button id="reset-btn" onclick="resetInput()">RESET</button>
+                <button id="ans-btn" onclick="calculate()">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
